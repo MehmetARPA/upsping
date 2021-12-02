@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+   node-hello:
+     image: snmp_ping
+     build: .
+     environment:
+       NODE_ENV: prod
+     ports:       
+       - 162:162/udp     
+       
